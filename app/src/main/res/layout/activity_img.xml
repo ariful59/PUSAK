@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight=".25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:src="@drawable/uni"
+                    android:id="@+id/imageButton1"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/common_google_signin_btn_icon_dark_focused"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="University"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold"
+                    android:id="@+id/eidt1"
+                    android:singleLine="false"
+                    android:selectAllOnFocus="true"
+                    android:layout_below="@+id/imageButton1"
+                    android:layout_centerHorizontal="true"
+                    style="@android:style/Widget.AutoCompleteTextView"
+                    android:editable="false" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight=".25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold"
+                    android:editable="false"
+                    android:id="@+id/eidt2"
+                    android:selectAllOnFocus="true"
+                    android:layout_below="@+id/imageButton2"
+                    android:layout_centerHorizontal="true"
+                    style="@android:style/Widget.AutoCompleteTextView"
+                    android:singleLine="false"
+                    android:accessibilityLiveRegion="assertive" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:src="@drawable/blood"
+                    android:id="@+id/imageButton2"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/common_google_signin_btn_icon_dark_focused"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="183dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:src="@drawable/dept"
+                    android:id="@+id/imageButton3"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/common_google_signin_btn_icon_dark_focused"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departments"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold"
+                    android:id="@+id/eidt3"
+                    android:singleLine="false"
+                    android:selectAllOnFocus="true"
+                    android:layout_below="@+id/imageButton3"
+                    android:layout_centerHorizontal="true"
+                    style="@android:style/Widget.AutoCompleteTextView"
+                    android:editable="false"  />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="241dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:src="@drawable/map"
+                    android:id="@+id/imageButton4"
+                    android:adjustViewBounds="true"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    android:background="@drawable/common_google_signin_btn_icon_dark_focused"
+                    android:scaleType="centerInside"
+                    android:elevation="0dp"
+                    android:cropToPadding="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold"
+                    android:id="@+id/eidt4"
+                    android:singleLine="false"
+                    android:selectAllOnFocus="true"
+                    style="@android:style/Widget.AutoCompleteTextView"
+                    android:editable="false"
+                    android:layout_below="@+id/imageButton4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginStart="39dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
